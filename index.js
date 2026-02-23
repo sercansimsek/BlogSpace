@@ -7,12 +7,13 @@ fetch(`${baseURL}/posts`)
   .then((data) => {
     let listHTML = "";
 
-    data.map((element) => {
+    data.slice(0, 5).map((element) => {
       const { title, body } = element;
       listHTML += `
-            <li>
-                <p>${title}</p>
+            <li class="list-item">
+                <h3>${title}</h3>
                 <p>${body}</p>
+                <hr>
             </li>
         `;
     });
@@ -20,3 +21,5 @@ fetch(`${baseURL}/posts`)
     list.innerHTML = listHTML;
   });
 
+
+ 

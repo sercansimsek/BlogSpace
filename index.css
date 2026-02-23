@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.navbar {
+  height: 30px;
+  position: fixed;
+}
+
+.navbar-title {
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding: 7em 2em;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
