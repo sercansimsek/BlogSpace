@@ -1,24 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>BlogSpace</title>
-  </head>
-  <body>
-    <nav class="navbar">
-        <h1 class="navbar-title">Blogspace</h1>
-    </nav>
-    <div class="container">
-      <ul class="list"></ul>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<nav>
+			<h3>BlogSpace</h3>
+		</nav>
+
+		<form>
+			<label for="post-title">Title:</label>
+			<input id="post-title" type="text" />
+			<label for="post-body">Body:</label>
+			<textarea id="post-body"></textarea>
+			<button>Post</button>
+		</form>
+		<div id="blog-list"></div>
+		<script src="index.js"></script>
+	</body>
 </html>
